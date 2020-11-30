@@ -66,24 +66,16 @@
             
         }
 
-        li:nth-child(odd)::after{
-            content: "";
-            height: 100%;
-            width: 1px;
-            background-color: slategrey;
-            position: absolute;
-            right:-100px;
-            top:10px
-        }
-
         li:nth-child(even)::after{
             content: "";
             height: 500px;
-            width: 1px;
-            background-color: slategrey;
+            border: slategrey 0.5px solid;
             position: absolute;
             right:398px;
-            top:-200px
+            top:-200px;
+            z-index: -1;
+            
+            
         }
 
         li:nth-child(odd) a::before{
@@ -93,7 +85,10 @@
             background-color: slategrey;
             position: absolute;
             left:300px;
-            top:75px
+            top:75px;
+            
+            
+            
         }
 
         li:nth-child(even) a::before{
@@ -103,7 +98,9 @@
             background-color: slategrey;
             position: absolute;
             right:300px;
-            top:75px
+            top:75px;
+            
+
         }
 
         li:nth-child(odd) h3::before{
@@ -113,8 +110,10 @@
             border-radius: 50px;
             background-color: slategrey;
             position: absolute;
-            left:390px;
-            top:65px
+            left:389px;
+            top:65px;
+            z-index: 2;
+           
         }
 
         li:nth-child(even) h3::before{
@@ -124,8 +123,9 @@
             border-radius: 50px;
             background-color: slategrey;
             position: absolute;
-            right:390px;
-            top:65px
+            right:389px;
+            top:65px;
+            z-index: 2;
         }
 
 

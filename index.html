@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        html,body{
+            height: 100%;
+        }
+
+        .box{
+            width: 800px;
+            margin: 200px auto;
+           
+        }
+
+        .box ul{
+            width: 100%;
+            
+            
+        }
+
+        .box ul li{
+            width:270px;
+            height: 120px;
+            border: 1px gray solid;
+            margin:20px 0;
+            justify-content: center;
+            padding:15px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .box ul li h3{
+
+            padding:10px;
+            color:block;
+
+        }
+
+        .box ul li p{
+            font-size: 13px;
+            color:gray;
+
+            
+           
+        }
+
+        li:nth-child(odd){
+            float: left;
+            
+
+        }
+
+         li:nth-child(even){
+            float: right;
+            transform: translateY(100px);
+            
+        }
+
+        li:nth-child(odd)::after{
+            content: "";
+            height: 100%;
+            width: 1px;
+            background-color: slategrey;
+            position: absolute;
+            right:-100px;
+            top:10px
+        }
+
+        li:nth-child(even)::after{
+            content: "";
+            height: 500px;
+            width: 1px;
+            background-color: slategrey;
+            position: absolute;
+            right:398px;
+            top:-200px
+        }
+
+        li:nth-child(odd) a::before{
+            content:"";
+            width: 100px;
+            height: 1px;
+            background-color: slategrey;
+            position: absolute;
+            left:300px;
+            top:75px
+        }
+
+        li:nth-child(even) a::before{
+            content:"";
+            width: 100px;
+            height: 1px;
+            background-color: slategrey;
+            position: absolute;
+            right:300px;
+            top:75px
+        }
+
+        li:nth-child(odd) h3::before{
+            content:"";
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            background-color: slategrey;
+            position: absolute;
+            left:390px;
+            top:65px
+        }
+
+        li:nth-child(even) h3::before{
+            content:"";
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            background-color: slategrey;
+            position: absolute;
+            right:390px;
+            top:65px
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="card">
+            <li>
+                <a href="#">
+                    <h3>小傑·富力士</h3>
+                    <p>性格純樸、善良、天真開朗，童年時光多半在樹林裡度過，所有的動物對他十分友善。想法過於天真與簡單，因此很容易吸引朋友和敵人的注意力。有著超人一般的視覺和嗅覺。</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>奇犽·揍敵客</h3>
+                    <p>性格沉著冷靜、有點叛逆，喜愛惡作劇、頭腦機靈，是小傑最好的朋友。對自身的能力很有自信，雖然經常表現得很謙虛，但若是有人稱讚他，就會覺得尷尬。</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>酷拉皮卡</h3>
+                    <p>性格聰明冷靜，愛講道理，神經質以致容易失去判斷力。在情緒激動時眼睛會變成美麗的紅色，稱為「火紅眼」，窟盧塔族的一員。</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>雷歐力·帕拉丁奈特</h3>
+                    <p>性格成熟，有包容力，但容易感情用事，在獵人試驗期間與小傑，奇犽和酷拉皮卡結識。表面上、參加獵人試驗的目的是為了錢，但實際上是為了成為醫生。</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>西索</h3>
+                    <p>性格變態、狡猾、古怪、反覆無常且擅於欺騙，有著非凡的戰鬥能力，對與強者戰鬥感到興奮。形象為魔術師。</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>庫洛洛·魯西魯</h3>
+                    <p>出身於流星街，有敏銳的思考能力及洞察力。在友克鑫市命令旅團屠殺拍賣會場搶走所有寶物。</p>
+                </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</body>
+</html>
